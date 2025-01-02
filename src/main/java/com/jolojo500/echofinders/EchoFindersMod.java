@@ -1,5 +1,6 @@
 package com.jolojo500.echofinders;
 
+import com.jolojo500.echofinders.item.ModItems;
 import net.minecraft.world.level.block.TntBlock;
 import org.slf4j.Logger;
 
@@ -50,6 +51,8 @@ public class EchoFindersMod {
     {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
+        ModItems.ITEMS.register(modEventBus);
+
 
         // Register ourselves for server and other game events we are interested in.
         // Note that this is necessary if and only if we want *this* class (ExampleMod) to respond directly to events.
