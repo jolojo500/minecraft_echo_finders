@@ -22,4 +22,6 @@ public class ModItems {
     public static final DeferredItem<Item> ANORE = ITEMS.register("amogus", ()->new Item(new Item.Properties()));
 
 
+    //BlockItems, almost the same syntax
+
 }
